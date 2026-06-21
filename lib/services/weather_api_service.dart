@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 
 class WeatherApiService {
   // Replace with your WeatherAPI.com key
-  static const String apiKey = '2fca8792f41746c895262408261705';
+  static const String apiKey = 'APIKey***************************';
   static const String baseUrl = 'https://api.weatherapi.com/v1';
 
   // Fetch current weather + hourly forecast ONLY
