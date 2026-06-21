@@ -1,0 +1,46 @@
+plugins {
+    id "com.android.application"
+    id "dev.flutter.flutter-gradle-plugin"
+    id "org.jetbrains.kotlin.android"
+    id "com.google.gms.google-services"
+}
+
+android {
+    namespace = "com.example.hamza_weatherapp"  // Replace with your actual package name
+    compileSdk = 36
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+        // ✅ Correct Groovy syntax - no 'is' prefix
+        coreLibraryDesugaringEnabled = true
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_17.toString()
+    }
+
+    defaultConfig {
+        applicationId = "com.example.hamza_weatherapp"  // Replace with your actual package name
+        minSdkVersion = flutter.minSdkVersion
+        targetSdk = 36
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    // ✅ Desugaring library - use version 2.1.4 or higher [citation:3][citation:9]
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
+}

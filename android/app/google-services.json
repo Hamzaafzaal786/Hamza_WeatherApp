@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1065123572322",
+    "project_id": "hamza-weatherapp",
+    "storage_bucket": "hamza-weatherapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065123572322:android:d8fdd0c756be8fe82eff3b",
+        "android_client_info": {
+          "package_name": "com.example.hamza_weatherapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbHk2tBqTa3sCsZq_fLBDHa8ru7r0E86w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
